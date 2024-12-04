@@ -8,17 +8,29 @@
     <title>Sistema de Cadastro de Evento</title>
 </head>
 <body>
+
     <button onclick="adicionar()">Adicionar</button>
-    <button onclick="editar()">Editarar</button>
-    <button onclick="excluir()">Excluir</button>
+    <button id="editar" onclick="editar()">Editar</button>
+    <button id="excluir" onclick="excluir()">Excluir</button>
 
-    <div id="adicionarForm" class="oculto">
-        <input type="text" class="evento" placeholder="Evento">
-        <input type="number" class="ingresso" placeholder="Valor do Ingresso">
-        <input type="datetime-local" class="dataInicio">
-        <input type="datetime-local" class="dataFim">
+    <table id="eventos">
+        <!-- Cabeçalho da tabela -->
+        <th>Evento</th>
+        <th>Valor do Ingresso</th>
+        <th>Data de Início do Evento</th>
+        <th>Data de Término do Evento</th>
+        <th>Configurações</th>
+    </table>
 
-        <button onclick="salvar()">Salvar</button>
-    </div>
+    <input type="text" class="evento" placeholder="Evento">
+    <input type="number" class="ingresso" placeholder="Valor do Ingresso">
+    <input type="datetime-local" class="dataInicio">
+    <input type="datetime-local" class="dataFim">
+
+    <button onclick="salvar()">Salvar</button>
+
+    <!-- <div id="adicionarForm" class="oculto">
+        
+    </div> -->
 </body>
 </html>
